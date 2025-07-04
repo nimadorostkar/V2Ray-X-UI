@@ -3,7 +3,19 @@ X-UI, a multi-user Xray graphical management panel (replacing V2-UI and V2Ray)
 
 
 
-markdown
+X-UI provides a graphical user interface for managing servers and users. You can visually build servers for Shadowsocks, V2ray, Xray, Trojan, and other popular protocols. You can also monitor VPS performance and traffic usage in real time. X-UI replaces the older V2-UI panel.
+
+Preparation
+Before you begin, you need to do three or four things:
+
+Get a virtual private server or VPS. You can get a VPS from many providers. Some popular ones are AWS, Google Cloud, Microsoft Azure, DigitalOcean, Hetzner, and Vultr. In our example we use a Debian 11 VPS, but the X-UI install script supports Ubuntu 16+, Debian 8+, or CentOS 7+. You need to have ports 80 and 443 on your VPS open for TCP input. Also open port 54321 for TCP input.
+Get a domain name. Some low-cost registrars are Porkbun, Namesilo, and Namecheap.
+Create a DNS A record pointing from your host name to your VPS.
+Optionally, add your domain to Cloudflare. This will allow you to insert a content distribution network or CDN in between you and your server. However, if you are going to add a CDN, do not turn on proxying in Cloudflare until the end. For now, just use the DNS features of Cloudflare. Adding your domain to Cloudflare is optional, and you can continue to use your domain name registrar’s nameservers if you prefer. In any case, not all protocols support the use of CDN proxying.
+
+
+
+
 # X-UI Panel Setup Guide
 
 A comprehensive guide to installing and configuring the X-UI panel for managing multiple proxy users.
